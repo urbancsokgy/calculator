@@ -1,0 +1,110 @@
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --lightblue: #bcbcf5;
+    --gray : #e0dddd;
+  }
+  
+*{
+    box-sizing: border-box;
+    
+}
+html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.wrapper{
+    text-align: center;
+    position: relative;
+    min-width: 200px;
+    min-height: 300px;
+    max-width: 300px;
+    max-height: 500px;
+    background-color:var(--gray);
+    margin: 0 auto;
+    top: 100px;
+    box-shadow: 0 0 3px 3px var(--lightblue);
+
+}
+.display{
+    width: 100%;
+    padding: 3px;
+}
+.display  input{
+    margin: 10px 0;
+    height: 2rem;
+    border-radius: 5px;
+    text-align: right;
+    font-size: 1.2rem;
+    background-color: white;
+    color: black
+}
+.display__content{
+    width: 100%;
+    height: 2rem;
+    
+}
+.flexbox{
+    width: 100%;
+    display: flex;
+}
+.flexbox .flex__row{
+    display: flex;
+  
+    flex-basis: 75%;
+}
+.flexbox .flex__column{
+    display: flex;
+    flex-basis: 25%;
+    flex-direction: column;
+   
+}
+.buttons{
+    margin-left: 2px;
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+    width: 100%;
+}
+.btn, .col__btn{
+    display: inline-block;
+    text-align: center;
+    padding-top: .5rem;
+    width: 70px;
+    height: 3rem;
+     margin: auto;
+    background-color: var(--lightblue);
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.col__btn{
+    width: 70px;
+    height: 6.3rem; 
+    padding-top: 2rem;   
+    background-color: var(--blue);
+}
+.btn__null{
+    width: 140px;
+}
+.operation__btn{
+    height: 3rem;
+     margin: auto;
+    background-color: var(--blue);
+    border: 1px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    margin: auto;
+    width: 70px;
+    padding-top: .7rem;
+    
+}
