@@ -38,6 +38,9 @@ let firstInput="";
          
     if(operations.includes(currentInput) && operations.includes(preInput) )
     {
+        if((preInput+currentInput)=='+-'){display.value=display.value.slice(0, -1)+'-';};
+        if((preInput+currentInput)=='-+'){display.value=display.value.slice(0, -1)+'-';};
+        
         console.log(preInput+currentInput);
     }else{
         display.value+=currentInput;}
