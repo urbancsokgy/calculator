@@ -82,14 +82,20 @@ body{
     padding-top: .5rem;
     width: 70px;
     height: 3rem;
-     margin: auto;
+     margin: 2px;
     background-color: var(--lightblue);
     border: 1px solid black;
     border-radius: 5px;
+    user-select: none;
+}
+.btn:hover, .col__btn:hover, .operation__btn:hover{
+background-color: rgba(7, 7, 117,.5);
+
+font-weight: bolder;
 }
 .col__btn{
     width: 70px;
-    height: 6.3rem; 
+    height: 9rem; 
     padding-top: 2rem;   
     background-color: var(--blue);
 }
@@ -106,5 +112,6 @@ body{
     margin: auto;
     width: 70px;
     padding-top: .7rem;
+    user-select: none;
     
 }
